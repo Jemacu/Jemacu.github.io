@@ -38,6 +38,24 @@ However, if you are planning a cycling or camping trip on Vancouver Island, you 
 <a name="map" class="anchor" href="#map"><span class="octicon octicon-link"></span></a>Map</h3>
 <script src="https://embed.github.com/view/geojson/Jemacu/Jemacu.github.io/master/routesmap.geojson"></script>
 
+<h3>Route Info</h3>
+<a onclick="myFunction(1)"><u><font color="blue">Route 1 - Ladysmith to Crofton</font></u></a><br>
+<a onclick="myFunction(2)"><u><font color="blue">Route 2 - Vesuvius to Ganges</font></u></a><br>
+<a onclick="myFunction(3)"><u><font color="blue">Route 3 - Ganges to Ruckle Park</font></u></a>
+<p id="clickme">Click on route name above for more information.</p>
+
+<script>
+function myFunction(id){
+	if (id==1) {
+		document.getElementById("clickme").innerHTML = "Ladysmith to Crofton<br>Length: 22 km<br> Elevation gain/loss: 282m/328m<br> Not bad, great views but narrow shoulder. Watch out for storm drains.";
+	} else if (id==2) {
+		document.getElementById("clickme").innerHTML = "Vesuvius to Ganges<br>Length: 6.4 km<br> Elevation gain/loss: 86m/49m<br> A steep climb up from the ferry dock. Lots of deer.";
+	} else if (id==3) {
+		document.getElementById("clickme").innerHTML = "Ganges to Ruckle Park<br> Length: 18 km<br> Elevation gain/loss: 280m/317m<br> Highest point is about half way."
+	}
+}
+</script>
+
 <h3>
 <a name="campgrounds--other-point-features" class="anchor" href="#campgrounds--other-point-features"><span class="octicon octicon-link"></span></a>Campgrounds &amp; other point features</h3>
 
